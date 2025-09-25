@@ -1,0 +1,683 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#preloader {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(181, 181, 181, 0.316);
+    backdrop-filter: blur(72px) opacity(2.5);
+    flex-direction: column;
+
+}
+
+
+
+#percent {
+    color: white;
+    font-family: 'Neutral Face';
+}
+
+#bar {
+    width: 60%;
+    margin-top: 20px;
+}
+
+#barconfrm {
+    width: 1%;
+    padding: 1px 0px;
+    background-color: white;
+
+}
+
+
+
+.page-change {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    background-color: rgba(181, 181, 181, 0.316);
+    backdrop-filter: blur(72px) opacity(2.5);
+    
+}
+
+
+/* =================== HOME START ====================== */
+/* =================== HOME START ====================== */
+/* =================== HOME START ====================== */
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9;
+
+}
+
+.protfolio-home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 700px;
+    padding: 50vh 0 ;
+
+}
+
+
+.content {
+    width: 95%;
+    height: 90vh;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 12px;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+
+
+.logo h1 {
+    color: white;
+    font-size: 40px;
+    padding: 20px 0 0 30px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.home-content {
+    padding: 60px 30px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-home h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Manrope', sans-serif;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hello-emoji {
+    font-size: 50px;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.content-home h4 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 0 0;
+}
+
+
+.content-home p {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 300;
+    font-family: 'Manrope', sans-serif;
+    max-width: 500px;
+
+    padding: 40px 0 0;
+}
+
+.button {
+    padding: 30px 0 0;
+}
+
+.myButton {
+    display: inline-block;
+    padding: 11px 66px;
+    text-decoration: none;
+    border-radius: 84px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.myButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.bg-img {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    height: 448px;
+    width: 448px;
+    background-color: #ffffff2e;
+    backdrop-filter: blur(1px) contrast(17.5);
+}
+
+.bg-img img {
+    filter: grayscale(1);
+    height: auto;
+    width: 100%;
+    transform: scale3d(1.8, 1.8, 7.5) translate(10px, 30px);
+}
+
+
+
+
+.navbar {
+    width: 7%;
+    /* width: 8%; */
+    height: 61vh;
+    position: fixed;
+    right: 0;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 12px;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+
+
+
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 22px;
+    margin: 0;
+
+}
+
+lord-icon {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+/* =================== HOME PAGE END ====================== */
+/* =================== HOME PAGE END ====================== */
+/* =================== HOME PAGE END ====================== */
+
+
+
+
+
+/* ================================ ABOUT PAGE START =============================== */
+/* ================================ ABOUT PAGE START =============================== */
+
+.content-about-scroll {
+    overflow: auto;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f17f;
+    border-radius: 90px;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0a09097f;
+    border-radius: 90px;
+}
+
+
+
+.about-content {
+    padding: 30px 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content-about {
+    width: 50%;
+}
+
+.content-about h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px gray;
+}
+
+.content-about p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Manrope', sans-serif;
+    max-width: 500px;
+
+    padding: 40px 0 0;
+}
+
+.about-skils {
+    text-align: left !important;
+    width: 50%;
+}
+
+.skills-about h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px gray;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 21px;
+    padding: 30px 0 0 0;
+
+}
+
+.skills-sets {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid white;
+    gap: 24px;
+    padding: 24px;
+    height: 161px;
+    width: 130px;
+    text-align: center;
+}
+
+.skills-sets img {
+    height: auto;
+    width: 70px;
+}
+
+.skills-sets h5 {
+    color: black;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+
+
+
+
+.section-experience {
+    padding: 60px 30px;
+}
+
+.section-experience-heading h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px gray;
+}
+
+
+.history-tl-container ul.tl {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.history-tl-container ul.tl li {
+    list-style: none;
+    margin: auto;
+    margin-left: 200px;
+    min-height: 50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left: 1px dashed #86D6FF;
+    padding: 0 0 50px 30px;
+    position: relative;
+}
+
+.history-tl-container ul.tl li:last-child {
+    border-left: 0;
+}
+
+.history-tl-container ul.tl li::before {
+    position: absolute;
+    left: -9px;
+    top: -1px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #258CC7;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.history-tl-container ul.tl li:hover::before {
+    border-color: #258CC7;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-title {
+    color: rgb(188 186 186);
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 0 2px #181818;
+}
+
+ul.tl li .item-postion {
+    color: rgb(0 0 0);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+    text-shadow: 0 0 2px BLACK;
+}
+
+ul.tl li .item-detail {
+    color: rgb(0 0 0);
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: 0 0 2px BLACK;
+}
+
+ul.tl li .timestamp {
+    color: #ffffff;
+    position: absolute;
+    width: 118px;
+    left: -16%;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+/* =================== ABOUT PAGE END ====================== */
+/* =================== ABOUT PAGE END ====================== */
+/* =================== ABOUT PAGE END ====================== */
+
+
+
+/* =================== CONTACT PAGE START ====================== */
+/* =================== CONTACT PAGE START ====================== */
+/* =================== CONTACT PAGE START ====================== */
+
+
+.contact-content {
+    padding: 30px 0 0 0;
+}
+
+.contact-heading h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px gray;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.content-contact {
+    width: 60%;
+}
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.input-box {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(255 255 255 / 25%);
+    padding: 0 20px;
+    color: #18293c;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.input-message {
+    display: block;
+    width: 100%;
+    height: 230px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(255 255 255 / 25%);
+    padding: 0 20px;
+    color: #18293c;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    padding: 20px;
+}
+
+.input-box::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+  }
+
+ .input-message::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+  }
+    
+
+.input-box:focus,
+.input-box:active {
+    border: 1px solid white;
+    outline: none;
+}
+
+.input-message:focus,
+.input-message:active {
+    border: 1px solid white;
+    outline: none;
+}
+
+.submit {
+    display: block;
+    width: 40%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(255 255 255 / 25%);
+    padding: 0 20px;
+    color: #000000;
+    border: 1px solid white;
+    font-weight: 600;
+    transition: border-color 0.3s ease;
+}
+
+
+.contact-deta {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding-left: 31px;
+}
+
+h3.deta-title {
+    font-size: 20px;
+    color: #18293c;
+}
+
+a.deta-type {
+    text-decoration: none;
+    color: #18293c;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.deta-type i {
+    font-size: 20px;
+    color: #85bfff;
+}
+
+.social-icons {
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 25px;
+    color: rgb(255, 64, 96);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255 255 255 / 25%);
+    border: 1px solid rgb(255 255 255 / 40%);
+   
+    border-radius: 50%;
+    margin: 6px 4px 0 0;
+    transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 64, 96);
+}
+
+
+/* =================== CONTACT PAGE END ====================== */
+/* =================== CONTACT PAGE END ====================== */
+/* =================== CONTACT PAGE END ====================== */
+
+
+/* =================== PROJECTS PAGE START ====================== */
+/* =================== PROJECTS PAGE START ====================== */
+/* =================== PROJECTS PAGE START ====================== */
+
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-heading {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px gray;
+    text-align: center;
+}
+
+
+.projects-box {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(255 255 255 / 25%);
+    border: 1px solid rgb(255 255 255 / 40%);
+    backdrop-filter: blur(16px) contrast(0.5);
+    border-radius: 18px;
+    
+}
+
+
+
+
+
+
+
